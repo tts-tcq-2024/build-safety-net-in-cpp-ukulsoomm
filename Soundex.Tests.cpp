@@ -34,3 +34,7 @@ TEST(SoundexTest, HandlesAllZeros) {
     EXPECT_EQ(generateSoundex("AEIOU"), "A000");
 }
 
+TEST(SoundexTest, HandlesSameSoundexCodeCharacters) {
+    EXPECT_EQ(generateSoundex("BFPV"), "B000");
+}
+
