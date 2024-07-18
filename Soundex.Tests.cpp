@@ -10,3 +10,7 @@ TEST(SoundexTest, HandlesSingleCharacter) {
     EXPECT_EQ(generateSoundex("A"), "A000");
 }
 
+TEST(SoundexTest, HandlesDuplicatesAndSkips) {
+    EXPECT_EQ(generateSoundex("AABBBB"), "A100");
+}
+
