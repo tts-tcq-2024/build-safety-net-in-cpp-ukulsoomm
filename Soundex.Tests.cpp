@@ -22,3 +22,11 @@ TEST(SoundexTest, HandlesMixedCase) {
     EXPECT_EQ(generateSoundex("McDonald"), "M235");
 }
 
+TEST(SoundexTest, HandlesLongInput) {
+    EXPECT_EQ(generateSoundex("Washington"), "W252");
+}
+
+TEST(SoundexTest, HandlesShortInput) {
+    EXPECT_EQ(generateSoundex("Li"), "L000");
+}
+
