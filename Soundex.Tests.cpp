@@ -46,3 +46,7 @@ TEST(SoundexTest, HandlesSeperationByZeroCodeCharacters) {
     EXPECT_EQ(generateSoundex("BhFyPV"), "B000");
 }
 
+TEST(SoundexTest, ProducesExactlyFourCharacters) {
+    EXPECT_EQ(generateSoundex("Ashcraft"), "A261");
+}
+
