@@ -18,3 +18,7 @@ TEST(SoundexTest, HandlesNonAlphabeticCharacters) {
     EXPECT_EQ(generateSoundex("John123"), "J500");
 }
 
+TEST(SoundexTest, HandlesMixedCase) {
+    EXPECT_EQ(generateSoundex("McDonald"), "M235");
+}
+
