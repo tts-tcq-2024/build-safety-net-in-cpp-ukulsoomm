@@ -30,3 +30,7 @@ TEST(SoundexTest, HandlesShortInput) {
     EXPECT_EQ(generateSoundex("Li"), "L000");
 }
 
+TEST(SoundexTest, HandlesAllZeros) {
+    EXPECT_EQ(generateSoundex("AEIOU"), "A000");
+}
+
