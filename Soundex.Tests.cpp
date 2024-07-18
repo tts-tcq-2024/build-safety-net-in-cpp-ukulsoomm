@@ -14,3 +14,7 @@ TEST(SoundexTest, HandlesDuplicatesAndSkips) {
     EXPECT_EQ(generateSoundex("AABBBB"), "A100");
 }
 
+TEST(SoundexTest, HandlesNonAlphabeticCharacters) {
+    EXPECT_EQ(generateSoundex("John123"), "J500");
+}
+
