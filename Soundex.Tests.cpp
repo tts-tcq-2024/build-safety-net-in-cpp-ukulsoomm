@@ -38,3 +38,7 @@ TEST(SoundexTest, HandlesSameSoundexCodeCharacters) {
     EXPECT_EQ(generateSoundex("BFPV"), "B000");
 }
 
+TEST(SoundexTest, HandlesSkippedCharacters) {
+    EXPECT_EQ(generateSoundex("Aeiouhwy"), "A000");
+}
+
